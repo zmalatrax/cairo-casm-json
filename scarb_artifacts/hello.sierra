@@ -1,0 +1,14 @@
+type felt252 = felt252 [storable: true, drop: true, dup: true, zero_sized: false];
+type Unit = Struct<ut@Tuple> [storable: true, drop: true, dup: true, zero_sized: true];
+type compile_cairo1::hello::MyEnum = Enum<ut@compile_cairo1::hello::MyEnum, Unit, felt252> [storable: true, drop: true, dup: true, zero_sized: false];
+
+libfunc felt252_const<1234> = felt252_const<1234>;
+libfunc enum_init<compile_cairo1::hello::MyEnum, 1> = enum_init<compile_cairo1::hello::MyEnum, 1>;
+libfunc store_temp<compile_cairo1::hello::MyEnum> = store_temp<compile_cairo1::hello::MyEnum>;
+
+felt252_const<1234>() -> ([0]); // 0
+enum_init<compile_cairo1::hello::MyEnum, 1>([0]) -> ([1]); // 1
+store_temp<compile_cairo1::hello::MyEnum>([1]) -> ([1]); // 2
+return([1]); // 3
+
+compile_cairo1::hello::main@0() -> (compile_cairo1::hello::MyEnum);
