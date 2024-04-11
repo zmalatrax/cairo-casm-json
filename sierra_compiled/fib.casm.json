@@ -1,0 +1,204 @@
+{
+  "prime": "0x800000000000011000000000000000000000000000000000000000000000001",
+  "compiler_version": "2.5.4",
+  "bytecode": [
+    "0x480a7ffc7fff8000",
+    "0x480a7ffd7fff8000",
+    "0x480680017fff8000",
+    "0x10",
+    "0x1104800180018000",
+    "0x3",
+    "0x208b7fff7fff7ffe",
+    "0x480a7ffb7fff8000",
+    "0x480a7ffc7fff8000",
+    "0x480a7ffd7fff8000",
+    "0x480680017fff8000",
+    "0x0",
+    "0x480680017fff8000",
+    "0x1",
+    "0x1104800180018000",
+    "0x13",
+    "0x20680017fff7ffb",
+    "0xa",
+    "0x48127ff97fff8000",
+    "0x48127ff97fff8000",
+    "0x480680017fff8000",
+    "0x0",
+    "0x480680017fff8000",
+    "0x0",
+    "0x48127ffb7fff8000",
+    "0x208b7fff7fff7ffe",
+    "0x48127ff97fff8000",
+    "0x48127ff97fff8000",
+    "0x480680017fff8000",
+    "0x1",
+    "0x48127ffb7fff8000",
+    "0x48127ffb7fff8000",
+    "0x208b7fff7fff7ffe",
+    "0x1104800180018000",
+    "0x39",
+    "0x482480017fff8000",
+    "0x38",
+    "0x480080007fff8000",
+    "0xa0680017fff8000",
+    "0x9",
+    "0x4825800180007ffa",
+    "0x686",
+    "0x482480017fff8000",
+    "0x100000000000000000000000000000000",
+    "0x400280007ff97fff",
+    "0x10780017fff7fff",
+    "0x1b",
+    "0x4825800180007ffa",
+    "0x686",
+    "0x400280007ff97fff",
+    "0x482680017ff98000",
+    "0x1",
+    "0x20780017fff7ffb",
+    "0xb",
+    "0x48127fff7fff8000",
+    "0x48127ffd7fff8000",
+    "0x480680017fff8000",
+    "0x0",
+    "0x480a7ffb7fff8000",
+    "0x480a7ffd7fff8000",
+    "0x480a7ffc7fff8000",
+    "0x480a7ffc7fff8000",
+    "0x208b7fff7fff7ffe",
+    "0x48127fff7fff8000",
+    "0x48127ffd7fff8000",
+    "0x4825800180007ffb",
+    "0x1",
+    "0x480a7ffd7fff8000",
+    "0x482a7ffd7ffc8000",
+    "0x1104800180018000",
+    "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffffdd",
+    "0x208b7fff7fff7ffe",
+    "0x40780017fff7fff",
+    "0x1",
+    "0x480680017fff8000",
+    "0x4f7574206f6620676173",
+    "0x400080007ffe7fff",
+    "0x482680017ff98000",
+    "0x1",
+    "0x480a7ffa7fff8000",
+    "0x480680017fff8000",
+    "0x1",
+    "0x480680017fff8000",
+    "0x0",
+    "0x480680017fff8000",
+    "0x0",
+    "0x48127ff97fff8000",
+    "0x482480017ff88000",
+    "0x1",
+    "0x208b7fff7fff7ffe"
+  ],
+  "hints": [
+    [
+      38,
+      [
+        {
+          "TestLessThanOrEqual": {
+            "lhs": {
+              "Immediate": "0x686"
+            },
+            "rhs": {
+              "Deref": {
+                "register": "FP",
+                "offset": -6
+              }
+            },
+            "dst": {
+              "register": "AP",
+              "offset": 0
+            }
+          }
+        }
+      ]
+    ],
+    [
+      72,
+      [
+        {
+          "AllocSegment": {
+            "dst": {
+              "register": "AP",
+              "offset": 0
+            }
+          }
+        }
+      ]
+    ]
+  ],
+  "pythonic_hints": [
+    [
+      38,
+      [
+        "memory[ap + 0] = 1670 <= memory[fp + -6]"
+      ]
+    ],
+    [
+      72,
+      [
+        "memory[ap + 0] = segments.add()"
+      ]
+    ]
+  ],
+  "main_func": [
+    {
+      "id": {
+        "id": 9897516724815680536,
+        "debug_name": "compile_cairo1::fib::main"
+      },
+      "signature": {
+        "param_types": [
+          {
+            "id": 5158587525321846130,
+            "debug_name": "RangeCheck"
+          },
+          {
+            "id": 8338741463261264245,
+            "debug_name": "GasBuiltin"
+          }
+        ],
+        "ret_types": [
+          {
+            "id": 5158587525321846130,
+            "debug_name": "RangeCheck"
+          },
+          {
+            "id": 8338741463261264245,
+            "debug_name": "GasBuiltin"
+          },
+          {
+            "id": 17579156755020870300,
+            "debug_name": "core::panics::PanicResult::<(core::felt252)>"
+          }
+        ]
+      },
+      "params": [
+        {
+          "id": {
+            "id": 0,
+            "debug_name": null
+          },
+          "ty": {
+            "id": 5158587525321846130,
+            "debug_name": "RangeCheck"
+          }
+        },
+        {
+          "id": {
+            "id": 1,
+            "debug_name": null
+          },
+          "ty": {
+            "id": 8338741463261264245,
+            "debug_name": "GasBuiltin"
+          }
+        }
+      ],
+      "entry_point": 0
+    }
+  ]
+}

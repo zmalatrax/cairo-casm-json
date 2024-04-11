@@ -1,0 +1,32 @@
+{
+  "prime": "0x800000000000011000000000000000000000000000000000000000000000001",
+  "compiler_version": "2.5.4",
+  "bytecode": [
+    "0x480680017fff8000",
+    "0x1",
+    "0x480680017fff8000",
+    "0x4d2",
+    "0x208b7fff7fff7ffe"
+  ],
+  "hints": [],
+  "pythonic_hints": [],
+  "main_func": [
+    {
+      "id": {
+        "id": 17652885446904878453,
+        "debug_name": "compile_cairo1::hello::main"
+      },
+      "signature": {
+        "param_types": [],
+        "ret_types": [
+          {
+            "id": 9575521967603361843,
+            "debug_name": "compile_cairo1::hello::MyEnum"
+          }
+        ]
+      },
+      "params": [],
+      "entry_point": 0
+    }
+  ]
+}

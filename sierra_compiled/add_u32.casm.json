@@ -1,0 +1,165 @@
+{
+  "prime": "0x800000000000011000000000000000000000000000000000000000000000001",
+  "compiler_version": "2.5.4",
+  "bytecode": [
+    "0x480a7ffd7fff8000",
+    "0x480680017fff8000",
+    "0x2",
+    "0x480680017fff8000",
+    "0x4",
+    "0x1104800180018000",
+    "0x3",
+    "0x208b7fff7fff7ffe",
+    "0xa0680017fff8000",
+    "0x8",
+    "0x482a7ffd7ffc8000",
+    "0x4824800180007fff",
+    "0x100000000",
+    "0x400280007ffb7fff",
+    "0x10780017fff7fff",
+    "0xd",
+    "0x482a7ffd7ffc8001",
+    "0x4824800180007fff",
+    "0xffffffffffffffffffffffff00000000",
+    "0x400280007ffb7ffe",
+    "0x482680017ffb8000",
+    "0x1",
+    "0x480680017fff8000",
+    "0x0",
+    "0x48127ffd7fff8000",
+    "0x10780017fff7fff",
+    "0x7",
+    "0x482680017ffb8000",
+    "0x1",
+    "0x480680017fff8000",
+    "0x1",
+    "0x48127ffd7fff8000",
+    "0x480680017fff8000",
+    "0x7533325f616464204f766572666c6f77",
+    "0x1104800180018000",
+    "0x7",
+    "0x48127ff67fff8000",
+    "0x48127ffc7fff8000",
+    "0x48127ffc7fff8000",
+    "0x48127ffc7fff8000",
+    "0x208b7fff7fff7ffe",
+    "0x20780017fff7ffb",
+    "0xa",
+    "0x40780017fff7fff",
+    "0x1",
+    "0x480680017fff8000",
+    "0x0",
+    "0x480680017fff8000",
+    "0x0",
+    "0x480a7ffc7fff8000",
+    "0x208b7fff7fff7ffe",
+    "0x40780017fff7fff",
+    "0x1",
+    "0x400180007fff7ffd",
+    "0x480680017fff8000",
+    "0x1",
+    "0x48127ffe7fff8000",
+    "0x482480017ffd8000",
+    "0x1",
+    "0x208b7fff7fff7ffe"
+  ],
+  "hints": [
+    [
+      8,
+      [
+        {
+          "TestLessThan": {
+            "lhs": {
+              "BinOp": {
+                "op": "Add",
+                "a": {
+                  "register": "FP",
+                  "offset": -4
+                },
+                "b": {
+                  "Deref": {
+                    "register": "FP",
+                    "offset": -3
+                  }
+                }
+              }
+            },
+            "rhs": {
+              "Immediate": "0x100000000"
+            },
+            "dst": {
+              "register": "AP",
+              "offset": 0
+            }
+          }
+        }
+      ]
+    ],
+    [
+      51,
+      [
+        {
+          "AllocSegment": {
+            "dst": {
+              "register": "AP",
+              "offset": 0
+            }
+          }
+        }
+      ]
+    ]
+  ],
+  "pythonic_hints": [
+    [
+      8,
+      [
+        "memory[ap + 0] = (memory[fp + -4] + memory[fp + -3]) % PRIME < 4294967296"
+      ]
+    ],
+    [
+      51,
+      [
+        "memory[ap + 0] = segments.add()"
+      ]
+    ]
+  ],
+  "main_func": [
+    {
+      "id": {
+        "id": 3752407170447277783,
+        "debug_name": "compile_cairo1::add_u32::main"
+      },
+      "signature": {
+        "param_types": [
+          {
+            "id": 5158587525321846130,
+            "debug_name": "RangeCheck"
+          }
+        ],
+        "ret_types": [
+          {
+            "id": 5158587525321846130,
+            "debug_name": "RangeCheck"
+          },
+          {
+            "id": 10584396767628366644,
+            "debug_name": "core::panics::PanicResult::<(core::integer::u32)>"
+          }
+        ]
+      },
+      "params": [
+        {
+          "id": {
+            "id": 0,
+            "debug_name": null
+          },
+          "ty": {
+            "id": 5158587525321846130,
+            "debug_name": "RangeCheck"
+          }
+        }
+      ],
+      "entry_point": 0
+    }
+  ]
+}
