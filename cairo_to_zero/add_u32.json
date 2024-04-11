@@ -1,0 +1,119 @@
+{
+    "attributes": [],
+    "builtins": [
+        "range_check"
+    ],
+    "prime": "0x800000000000011000000000000000000000000000000000000000000000001",
+    "compiler_version": "2.5.4",
+    "data": [
+        "0x480a7ffd7fff8000",
+        "0x480680017fff8000",
+        "0x2",
+        "0x480680017fff8000",
+        "0x4",
+        "0x1104800180018000",
+        "0x3",
+        "0x208b7fff7fff7ffe",
+        "0xa0680017fff8000",
+        "0x8",
+        "0x482a7ffd7ffc8000",
+        "0x4824800180007fff",
+        "0x100000000",
+        "0x400280007ffb7fff",
+        "0x10780017fff7fff",
+        "0xd",
+        "0x482a7ffd7ffc8001",
+        "0x4824800180007fff",
+        "0xffffffffffffffffffffffff00000000",
+        "0x400280007ffb7ffe",
+        "0x482680017ffb8000",
+        "0x1",
+        "0x480680017fff8000",
+        "0x0",
+        "0x48127ffd7fff8000",
+        "0x10780017fff7fff",
+        "0x7",
+        "0x482680017ffb8000",
+        "0x1",
+        "0x480680017fff8000",
+        "0x1",
+        "0x48127ffd7fff8000",
+        "0x480680017fff8000",
+        "0x7533325f616464204f766572666c6f77",
+        "0x1104800180018000",
+        "0x7",
+        "0x48127ff67fff8000",
+        "0x48127ffc7fff8000",
+        "0x48127ffc7fff8000",
+        "0x48127ffc7fff8000",
+        "0x208b7fff7fff7ffe",
+        "0x20780017fff7ffb",
+        "0xa",
+        "0x40780017fff7fff",
+        "0x1",
+        "0x480680017fff8000",
+        "0x0",
+        "0x480680017fff8000",
+        "0x0",
+        "0x480a7ffc7fff8000",
+        "0x208b7fff7fff7ffe",
+        "0x40780017fff7fff",
+        "0x1",
+        "0x400180007fff7ffd",
+        "0x480680017fff8000",
+        "0x1",
+        "0x48127ffe7fff8000",
+        "0x482480017ffd8000",
+        "0x1",
+        "0x208b7fff7fff7ffe"
+    ],
+    "hints": {
+        "8": [
+            {
+                "accessible_scopes": [
+                    "starkware.cairo.common.math_cmp",
+                    "starkware.cairo.common.math_cmp.is_le"
+                ],
+                "code": "memory[ap + 0] = (memory[fp + -4] + memory[fp + -3]) % PRIME < 4294967296",
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 0,
+                        "offset": 0
+                    },
+                    "reference_ids": {}
+                }
+            }
+        ],
+        "51": [
+            {
+                "accessible_scopes": [
+                    "starkware.cairo.common.alloc",
+                    "starkware.cairo.common.alloc.alloc"
+                ],
+                "code": "memory[ap + 0] = segments.add()",
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 0,
+                        "offset": 0
+                    },
+                    "reference_ids": {}
+                }
+            }
+        ]
+    },
+    "debug_info": {
+        "file_contents": {},
+        "instruction_locations": {}
+    },
+    "identifiers": {
+        "__main__.main": {
+            "decorators": [],
+            "pc": 0,
+            "type": "function"
+        }
+    },
+    "main_scope": "__main__",
+    "reference_manager": {
+        "references": []
+    }
+}

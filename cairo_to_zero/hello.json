@@ -1,0 +1,29 @@
+{
+    "attributes": [],
+    "builtins": [],
+    "prime": "0x800000000000011000000000000000000000000000000000000000000000001",
+    "compiler_version": "2.5.4",
+    "data": [
+      "0x480680017fff8000",
+      "0x1",
+      "0x480680017fff8000",
+      "0x4d2",
+      "0x208b7fff7fff7ffe"
+    ],
+    "debug_info": {
+        "file_contents": {},
+        "instruction_locations": {}
+    },
+    "hints": {},
+    "identifiers": {
+        "__main__.main": {
+            "decorators": [],
+            "pc": 0,
+            "type": "function"
+        }
+    },
+    "main_scope": "__main__",
+    "reference_manager": {
+        "references": []
+    }
+  }
